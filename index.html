@@ -1,13 +1,63 @@
-<div class="container">
-    <div class="version-a">
-       <h2>Version A</h2>
-       <img src="path/to/image-with-name-brand.jpg" alt="Image with name and brand">
-       <p>This version shows both the product name and brand.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A/B Testing Example</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>A/B Testing: Product Display Comparison</h1>
+    </header>
+
+    <!-- Button to toggle between versions -->
+    <div class="toggle-buttons">
+        <button id="version-a-btn">Show Version A</button>
+        <button id="version-b-btn">Show Version B</button>
     </div>
-    <div class="version-b">
-       <h2>Version B</h2>
-       <img src="path/to/image-with-name-only.jpg" alt="Image with name only">
-       <p>This version shows only the product name.</p>
+
+    <!-- Side by side comparison of Version A and Version B -->
+    <div class="container">
+        <div id="version-a" class="version">
+            <h2>Version A (With Name and Brand)</h2>
+            <img src="images/image-with-name-brand.jpg" alt="Image with Name and Brand">
+            <p>This version displays both the product name and brand.</p>
+        </div>
+
+        <div id="version-b" class="version" style="display: none;">
+            <h2>Version B (With Name Only)</h2>
+            <img src="images/image-with-name-only.jpg" alt="Image with Name Only">
+            <p>This version displays only the product name, without the brand.</p>
+        </div>
     </div>
- </div>
- 
+
+    <!-- Data Table Section -->
+    <div class="data">
+        <h3>Performance Data</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th>Version A (With Brand)</th>
+                    <th>Version B (Without Brand)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Click-Through Rate (CTR)</td>
+                    <td>7%</td>
+                    <td>5%</td>
+                </tr>
+                <tr>
+                    <td>Conversion Rate</td>
+                    <td>4%</td>
+                    <td>3%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Chart Section -->
+    <h3>Visual Data Comparison</h3>
+    <canvas id

@@ -1,17 +1,80 @@
+/* General Styles */
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f4f4f4;
+}
+
+header {
+   text-align: center;
+   padding: 20px;
+   background-color: #333;
+   color: white;
+}
+
+h1 {
+   margin: 0;
+}
+
 .container {
-    display: flex;
-    justify-content: space-around;
- }
- 
- .version-a, .version-b {
-    width: 45%; /* Adjust width as needed */
-    text-align: center;
- }
- 
- img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ddd;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
- }
- 
+   display: flex;
+   justify-content: space-around;
+   padding: 20px;
+}
+
+.version {
+   width: 45%;
+   text-align: center;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+   border: 1px solid #ddd;
+   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-buttons {
+   text-align: center;
+   margin: 20px;
+}
+
+button {
+   padding: 10px 20px;
+   margin: 5px;
+   border: none;
+   background-color: #333;
+   color: white;
+   cursor: pointer;
+}
+
+button:hover {
+   background-color: #555;
+}
+
+/* Data Table Styles */
+table {
+   width: 80%;
+   margin: 20px auto;
+   border-collapse: collapse;
+}
+
+table, th, td {
+   border: 1px solid #ccc;
+}
+
+th, td {
+   padding: 10px;
+   text-align: center;
+}
+
+thead {
+   background-color: #f4f4f4;
+}
+
+/* Chart Styling */
+#performanceChart {
+   width: 80%;
+   margin: 20px auto;
+}
