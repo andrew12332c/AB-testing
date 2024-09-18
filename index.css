@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+ }
+ 
+ .version-a, .version-b {
+    width: 45%; /* Adjust width as needed */
+    text-align: center;
+ }
+ 
+ img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+ }
+ 
